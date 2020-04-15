@@ -4,7 +4,7 @@ DocString ArgumentParser
 
 ## Usage
 
-```
+```example.py
 import sys
 
 import docrun
@@ -27,5 +27,13 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+```
+
+```shell
+$ python3 example.py
+usage: example.py [-h] [--value VALUE] name
+example.py: error: the following arguments are required: name
+$ python3 example.py test
+Hello test!
 ```
 
